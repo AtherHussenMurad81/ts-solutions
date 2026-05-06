@@ -56,8 +56,29 @@ class Person {
     this.age = age;
   }
 }
-class Student {
-
-
-    
+class Student extends Person {
+  grade: string;
+  constructor(name: string, age: number, grade: string) {
+    super(name, age);
+    this.grade = grade;
+  }
+  getDetails() {
+    return `Name: ${this.name}, age: ${this.age} and grade: ${this.grade}`;
+  }
 }
+
+// * Problem 7
+function getIntersection(arr1: number[], arr2: number[]): number[] {
+  const set = new Set(arr1);
+
+  const result = arr2.filter((item) => set.has(item));
+  return result;
+}
+
+//* alternative way
+
+const getIntersection2 = (array1: number[], array2: number[]): number[] => {
+  const result1 = array1.filter((item) => array2.includes(item));
+
+  return result1;
+};
