@@ -77,8 +77,8 @@ function getIntersection(arr1: number[], arr2: number[]): number[] {
 
 //* alternative way
 
-const getIntersection2 = (array1: number[], array2: number[]): number[] => {
-  const result1 = array1.filter((item) => array2.includes(item));
+// const getIntersection2 = (array1: number[], array2: number[]): number[] => {
+//   const result1 = array1.filter((item) => array2.includes(item));
 
-  return result1;
-};
+//   return result1;
+// };
